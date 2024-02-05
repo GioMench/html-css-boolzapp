@@ -20,7 +20,6 @@ body {
 /*REGION HEADER*/
 
 .infobar{
-    width: 100%;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -94,6 +93,11 @@ body {
 
 @media screen and (max-width: 991px) {
 
+    .left{
+        flex-grow:0;
+        display: block;
+        width:85px;
+    }
 
 }
 
