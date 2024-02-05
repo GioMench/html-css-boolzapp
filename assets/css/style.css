@@ -1,5 +1,54 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* REGION UTILITY*/
+
+.container {
+    width: 80%;
+    max-width: 1176px;
+    margin: auto;
+}
+
+body {
+    background: linear-gradient(to top, #d2dadd, #dddbd1 85%, #009789 20%, #009789 75%);
+    height: 100vh;
+}
+
+/*REGION HEADER*/
+
+.infobar{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.debug .infobar-left{
+    background-color: aqua;
+    flex-grow: 1;
+    height: 70px;
+}
+
+.debug .infobar-right{
+    background-color: aquamarine;
+    flex-grow: 2;
+    height: 70px;
+}
+
+.
+
+
+
+
+
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 991px; ) {}
+
+@media screen and (max-width: 540px; ) {}
