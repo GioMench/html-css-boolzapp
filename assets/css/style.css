@@ -15,6 +15,7 @@
 body {
     background: linear-gradient(to top, #d2dadd, #dddbd1 85%, #009789 20%, #009789 75%);
     height: 100vh;
+    background-repeat: no-repeat;
 }
 
 /*REGION HEADER*/
@@ -77,12 +78,32 @@ body {
 .debug .chat{
     background-color: burlywood;
     height: 460px;
+    position:relative;
 }
 
 .debug .typingzone{
     background-color: brown;
     height: 80px;
 }
+
+.debug .sender{
+    background-color: crimson;
+    width: 65%;
+    height: 90px;
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+
+.debug .addresses{
+    background-color: chocolate;
+    width: 65%;
+    height: 90px;
+    position: absolute;
+    top:150px;
+    left: 20px;
+}
+
 /*END REGION DEBUG MAIN*/
 
 /*END REGION MAIN*/
@@ -99,6 +120,14 @@ body {
         width:85px;
     }
 
+    .debug .infobar-left{
+        flex-grow: 0;
+    }
+
 }
 
-@media screen and (max-width: 540px) {}
+@media screen and (max-width: 540px) {
+    .left{
+        display: none;
+    }
+}
