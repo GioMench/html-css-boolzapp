@@ -6,6 +6,14 @@
 
 /* REGION UTILITY*/
 
+:root{
+    --bz-bar: #E8E9EA;
+    --bz-notification:#8edbfd;
+    --bz-chat-sender:#d4f9bb;
+    --bz-chat-addres:#fefffe;
+    --bz-icon-bar:#b1b0b0;
+}
+
 .container {
     width: 80%;
     max-width: 1176px;
@@ -18,29 +26,73 @@ body {
     background-repeat: no-repeat;
 }
 
+.contact-photo{
+    display: block;
+    border-radius: 50%;
+    height: 50px;
+}
+
+.fa-solid{
+    color: var(--bz-icon-bar);
+    padding:5px;
+    font-size: large;
+}
+
 /*REGION HEADER*/
 
 .infobar{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bz-bar);
 }
 
-/*DEBUG HEADER*/
+.infobar-left,.infobar-right{
+    border-right: 1px solid var(--bz-icon-bar);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.infobar-left{
+    flex-grow: 1;
+}
+
+.infobar-right{
+    flex-grow: 2;
+}
+
+.info-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.photo-1{
+    display: block;
+    width: 50px;
+}
+
+
+/*DEBUG HEADER
 
 .debug .infobar-left{
-    background-color: aqua;
+    
     flex-grow: 1;
     height: 70px;
 }
 
 .debug .infobar-right{
-    background-color: aquamarine;
+  
     flex-grow: 2;
     height: 70px;
 }
+END REGION DEBUG HEADER*/
 
-/*END REGION DEBUG HEADER*/
 /*END REGION HEADER*/
 
 
@@ -53,11 +105,20 @@ body {
 
 .container-left{
     flex-grow: 1;
+    height: 90%;
+    margin: auto;
 }
 
 .container-right{
     flex-grow: 2;
+    height: 90%;
+    margin: auto;
 }
+
+.contacts{
+    overflow-y: scroll;
+}
+
 
 /*DEBUG MAIN*/
 .debug .info-notification{
@@ -114,15 +175,26 @@ body {
 
 @media screen and (max-width: 991px) {
 
+
     .left{
         flex-grow:0;
         display: block;
-        width:85px;
+        width:80px;
     }
 
     .debug .infobar-left{
         flex-grow: 0;
     }
+  
+    .icon-bar-left{
+        display: none;
+    }
+
+    .contact-photo{
+        margin: auto;
+    }
+
+    
 
 }
 
