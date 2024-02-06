@@ -35,10 +35,7 @@ body {
 }
 
 .left {
-    background-color: var(--bz-bar-top);
-    height: 80px;
     flex-grow: 1;
-    
 }
 
 .right {
@@ -47,12 +44,14 @@ body {
 
 .fa-solid {
     color: var(--bz-icon-bar);
-    padding:10px;
+    padding: 10px;
 }
 
 /*REGION MAIN*/
 
 .me {
+    background-color: var(--bz-bar-top);
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,20 +59,40 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border-right: 1px solid var(--bz-icon-bar);
-    
+
 }
 
 .avatar-me {
     display: block;
     width: 80px;
     height: 80px;
-    padding:10px;
+    padding: 10px;
     border-radius: 100%;
     align-items: center;
 }
 
-.icon{
+.icon {
+    font-size: 1.5rem;
+}
+
+/*END REGION ME*/
+
+.notice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--bz-notification);
+    height: 90px;
+    gap:15px;
+}
+
+.fa-bell-slash{
     font-size:1.5rem;
+   padding: 18px 15px;
+    background-color: var(--bz-bell-back);
+    color: var(--bz-notification); 
+    border-radius: 100%;
+    margin-left:20px;
 
 }
 
@@ -84,19 +103,23 @@ body {
 
 @media screen and (max-width: 991px) {
 
-    .left{
+    .left {
         flex-grow: 0;
         width: 80px;
     }
 
-    .me{
-        padding:0;
+    .me {
+        padding: 0;
     }
 
-    .icon{
+    .icon {
         display: none;
     }
-    
+
+    .notice{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 540px) {}
