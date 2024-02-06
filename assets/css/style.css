@@ -74,6 +74,7 @@ body {
     align-items: center;
     gap: 10px;
     padding:20px;
+    position: relative;
 }
 
 .photo-1{
@@ -165,6 +166,14 @@ END REGION DEBUG HEADER*/
 
 .chat-contact{
     background-color: var(--bz-bell-back);
+}
+
+.last-message-time{
+    font-size: small;
+    position: absolute;
+    top:15px;
+    right: 15px;
+
 }
 
 /*DEBUG MAIN
