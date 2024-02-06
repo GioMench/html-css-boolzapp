@@ -10,10 +10,9 @@
     --bz-bar-top: #ebeaeb;
     --bz-notification: #8edbfd;
     --bz-chat-sender: #d4f9bb;
-    --bz-chat-addres: #fefffe;
+    --bz-chat-ligther: #fefffe;
     --bz-icon-bar: #b1b0b0;
     --bz-bell-back: #f2fafe;
-    --bz-search-back: #fbfbfa;
 }
 
 
@@ -95,7 +94,26 @@ body {
     margin-left:20px;
 
 }
+/*END REGION NOTICE*/
 
+.search{
+    background-color: var(--bz-bar-top);
+    height:50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-searchbar{
+    background-color: var(--bz-chat-ligther);
+    width: 95%;
+    margin:auto;
+}
+
+.searchbar{
+    border: none;
+    width: 300px;
+}
 
 
 
@@ -112,11 +130,7 @@ body {
         padding: 0;
     }
 
-    .icon {
-        display: none;
-    }
-
-    .notice{
+    .icon, .notice, .search {
         display: none;
     }
 
