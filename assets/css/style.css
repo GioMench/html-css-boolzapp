@@ -116,6 +116,10 @@ body {
 }
 /*END REGION SEARCH*/
 
+.contacts{
+    overflow-y: scroll;
+}
+
 .card{
     background-color: var(--bz-chat-ligther);
     height: 80px;
