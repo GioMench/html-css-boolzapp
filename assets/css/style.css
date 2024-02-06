@@ -55,22 +55,25 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding:10px;
 }
 
 .infobar-left{
     flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .infobar-right{
     flex-grow: 2;
+    padding-right:10px;
 }
 
 .info-contact{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    padding:20px;
 }
 
 .photo-1{
@@ -138,13 +141,37 @@ END REGION DEBUG HEADER*/
     margin-right: 10px;
 }
 
+/*END REGION NOTIFICATION*/
 
+.container-search{
+    background-color: var(--bz-bar);
+}
+
+.search{
+    padding:10px
+}
+
+.search-button, .tiping-search{
+    padding:10px 10px;
+    border: none;
+    background-color: var(--bz-bell-back);
+
+}
+
+.tiping-search{
+    margin-left:0;
+}
+/*END REGION SEARCH*/
+
+.chat-contact{
+    background-color: var(--bz-bell-back);
+}
 
 /*DEBUG MAIN
 .debug .info-notification{
     background-color: lightpink;
     height:80px;
-}*/
+}
 
 .debug .search{
     background-color: lightsalmon;
@@ -154,7 +181,7 @@ END REGION DEBUG HEADER*/
 .debug .contacts{
     background-color: lightcoral;
     height: 400px;
-}
+}*/
 
 .debug .chat{
     background-color: burlywood;
@@ -214,6 +241,13 @@ END REGION DEBUG HEADER*/
         margin: auto;
     }
 
+    .info-notification{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
     
 
 }
