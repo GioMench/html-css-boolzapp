@@ -98,7 +98,7 @@ body {
 /*END REGION NOTICE*/
 
 .search {
-    background-color: var(--bz-bar-top);
+    background-color: var(--bz-back-search);
     height: 50px;
     display: flex;
     align-items: center;
@@ -106,10 +106,11 @@ body {
 }
 
 .container-searchbar {
-    background-color: var(--bz-back-search);
+    background-color: var(--bz-chat-ligther);
     width: 97%;
     padding-left: 10px;
     margin: auto;
+    border: 1px solid var(--bz-bar-top)
 }
 
 .searchbar {
@@ -129,7 +130,7 @@ body {
 .card {
     background-color: var(--bz-chat-ligther);
     height: 85px;
-    border-bottom: 0.01em solid var(--bz-back-search);
+    border-bottom: 0.01em solid var(--bz-bar-top);
     display: flex;
     flex-direction: row;
     position: relative;
@@ -187,6 +188,10 @@ body {
 .fa-face-smile,
 .fa-microphone {
     font-size: 2rem;
+}
+
+#write{
+
 }
 
 
