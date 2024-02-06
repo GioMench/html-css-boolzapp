@@ -13,6 +13,7 @@
     --bz-chat-ligther: #fefffe;
     --bz-icon-bar: #b1b0b0;
     --bz-bell-back: #f2fafe;
+    --bz-text-light:#c0c4d0;
 }
 
 
@@ -106,7 +107,7 @@ body {
 
 .container-searchbar{
     background-color: var(--bz-chat-ligther);
-    width: 95%;
+    width: 97%;
     margin:auto;
 }
 
@@ -123,10 +124,11 @@ body {
 .card{
     background-color: var(--bz-chat-ligther);
     height: 80px;
-    border-bottom:1px solid var(--bz-icon-bar);
+    border-bottom:0.3px solid var(--bz-text-light);
     display: flex;
     flex-direction: row;
     position: relative;
+    padding-left:10px;
 
 }
 
@@ -145,10 +147,16 @@ body {
     justify-content: center;
 }
 
+.text-light{
+    color: var(--bz-text-light);
+    font-size:0.9rem;
+}
 .time{
+    font-size:0.9rem;
     position: absolute;
     top:10px;
     right: 10px;
+    color: var(--bz-text-light);
 }
 
 
@@ -164,9 +172,11 @@ body {
         width: 80px;
     }
 
-    .me {
+    .me, .card {
         padding: 0;
     }
+
+    
 
     .icon, .notice, .search, .info-contact, .time {
         display: none;
