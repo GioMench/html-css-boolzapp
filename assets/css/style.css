@@ -62,15 +62,6 @@ body {
 
 }
 
-.avatar-me {
-    display: block;
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    border-radius: 100%;
-    align-items: center;
-}
-
 .icon {
     font-size: 1.5rem;
 }
@@ -123,7 +114,7 @@ body {
 
 .card{
     background-color: var(--bz-chat-ligther);
-    height: 80px;
+    height: 85px;
     border-bottom:0.3px solid var(--bz-text-light);
     display: flex;
     flex-direction: row;
