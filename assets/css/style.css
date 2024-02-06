@@ -19,6 +19,8 @@
     width: 80%;
     max-width: 1176px;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom:10px;
 }
 
 body {
@@ -42,7 +44,7 @@ body {
 /*REGION HEADER*/
 
 .infobar{
-    margin-top: 10px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -120,7 +122,7 @@ END REGION DEBUG HEADER*/
     margin: auto;
 }
 
-.contacts, .chat{
+.chat-contact, .chat{
     overflow-y: scroll;
 }
 
@@ -173,7 +175,34 @@ END REGION DEBUG HEADER*/
     position: absolute;
     top:15px;
     right: 15px;
+}
+/*END REGION CHAT-CONTACT*/
 
+.chat{
+    background-image: url(./img/mine.jpg);
+    height:100%;
+    position:relative;
+}
+
+.sender{
+    background-color: var(--bz-chat-sender);
+    border-radius: 20px; 
+    width: 65%;
+    padding: 25px;
+    position: absolute;
+    top:20px;
+    right: 30px;
+    
+}
+
+.addresses{
+    background-color: var(--bz-chat-addres);
+    border-radius: 20px;
+    width: 65%;
+    padding: 25px;
+    position: absolute;
+    top:200px;
+    left: 30px;
 }
 
 /*DEBUG MAIN
@@ -190,7 +219,7 @@ END REGION DEBUG HEADER*/
 .debug .contacts{
     background-color: lightcoral;
     height: 400px;
-}*/
+}
 
 .debug .chat{
     background-color: burlywood;
@@ -198,10 +227,7 @@ END REGION DEBUG HEADER*/
     position:relative;
 }
 
-.debug .typingzone{
-    background-color: brown;
-    height: 80px;
-}
+
 
 .debug .sender{
     background-color: crimson;
@@ -219,8 +245,12 @@ END REGION DEBUG HEADER*/
     position: absolute;
     top:150px;
     left: 20px;
-}
+}*/
 
+.debug .typingzone{
+    background-color: brown;
+    height: 80px;
+}
 /*END REGION DEBUG MAIN*/
 
 /*END REGION MAIN*/
@@ -235,7 +265,11 @@ END REGION DEBUG HEADER*/
     .left{
         flex-grow:0;
         display: block;
-        width:80px;
+        width:85px;
+    }
+    
+    .infobar-left{
+        padding-top:20px;
     }
 
     .debug .infobar-left{
@@ -248,6 +282,11 @@ END REGION DEBUG HEADER*/
 
     .contact-photo{
         margin: auto;
+        
+    }
+
+    .info-none, .last-message-time{
+        display:none;
     }
 
     .info-notification{
