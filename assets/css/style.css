@@ -35,11 +35,11 @@ body {
 }
 
 .left {
-    flex-grow: 1;
+    width: 30%;
 }
 
 .right {
-    flex-grow: 2;
+    width: 70%;
 }
 
 .fa-solid {
@@ -47,9 +47,9 @@ body {
     padding: 10px;
 }
 
-/*REGION MAIN*/
+/*REGION LEFT*/
 
-.me {
+.me, .chat-on {  /*REGION CHAT-ON--REGION RIGHT*/
     background-color: var(--bz-bar-top);
     height: 80px;
     display: flex;
@@ -61,6 +61,7 @@ body {
     border-right: 1px solid var(--bz-icon-bar);
 
 }
+
 
 .icon {
     font-size: 1.5rem;
@@ -104,11 +105,12 @@ body {
 
 .searchbar{
     border: none;
-    width: 300px;
+    width:80%;
+    margin: auto;
 }
 /*END REGION SEARCH*/
 
-.contacts{
+.contacts, .chat{  /*REGION CHAT--REGION RIGHT*/
     overflow-y: scroll;
 }
 
@@ -149,6 +151,7 @@ body {
     right: 10px;
     color: var(--bz-text-light);
 }
+/*END REGION CONTACTS--END REGION LEFT*/
 
 
 
@@ -178,5 +181,9 @@ body {
 @media screen and (max-width: 540px) {
     .left{
         display: none;
+    }
+
+    .right{
+        width: 100%;
     }
 }
