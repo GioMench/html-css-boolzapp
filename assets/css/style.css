@@ -14,6 +14,7 @@
     --bz-icon-bar: #b1b0b0;
     --bz-bell-back: #f2fafe;
     --bz-text-light:#c0c4d0;
+    --bz-back-search:#fbfbfa;
 }
 
 
@@ -98,7 +99,7 @@ body {
 }
 
 .container-searchbar{
-    background-color: var(--bz-chat-ligther);
+    background-color: var(--bz-back-search);
     width: 97%;
     padding-left: 10px;
     margin:auto;
@@ -118,7 +119,7 @@ body {
 .card{
     background-color: var(--bz-chat-ligther);
     height: 85px;
-    border-bottom:0.3px solid var(--bz-text-light);
+    border-bottom:0.01em solid var(--bz-back-search);
     display: flex;
     flex-direction: row;
     position: relative;
