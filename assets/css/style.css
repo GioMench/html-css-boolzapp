@@ -12,6 +12,7 @@
     --bz-chat-sender:#d4f9bb;
     --bz-chat-addres:#fefffe;
     --bz-icon-bar:#b1b0b0;
+    --bz-bell-back:#f2fafe;
 }
 
 .container {
@@ -105,26 +106,45 @@ END REGION DEBUG HEADER*/
 
 .container-left{
     flex-grow: 1;
-    height: 90%;
+    height: 90vh;
     margin: auto;
 }
 
 .container-right{
     flex-grow: 2;
-    height: 90%;
+    height: 90vh;
     margin: auto;
 }
 
-.contacts{
+.contacts, .chat{
     overflow-y: scroll;
 }
 
+.info-notification{
+    background-color: var(--bz-notification);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:20px;
+}
 
-/*DEBUG MAIN*/
+.fa-bell-slash{
+    color: var(--bz-notification);
+    background-color: var(--bz-bell-back);
+    padding:15px 13px;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+
+
+/*DEBUG MAIN
 .debug .info-notification{
     background-color: lightpink;
     height:80px;
-}
+}*/
 
 .debug .search{
     background-color: lightsalmon;
