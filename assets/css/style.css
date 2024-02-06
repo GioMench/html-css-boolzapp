@@ -100,6 +100,7 @@ body {
 .container-searchbar{
     background-color: var(--bz-chat-ligther);
     width: 97%;
+    padding-left: 10px;
     margin:auto;
 }
 
@@ -178,8 +179,6 @@ body {
     .me, .card {
         padding: 0;
     }
-
-    
 
     .icon-left, .notice, .search, .info-contact, .time {
         display: none;
