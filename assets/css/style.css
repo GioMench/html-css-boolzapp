@@ -38,6 +38,7 @@ body {
     background-color: var(--bz-bar-top);
     height: 80px;
     flex-grow: 1;
+    
 }
 
 .right {
@@ -81,6 +82,21 @@ body {
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
 
-@media screen and (max-width: 540px) {
+    .left{
+        flex-grow: 0;
+        width: 80px;
+    }
+
+    .me{
+        padding:0;
+    }
+
+    .icon{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 540px) {}
