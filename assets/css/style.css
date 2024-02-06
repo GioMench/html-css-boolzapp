@@ -7,12 +7,20 @@
 /* REGION UTILITY*/
 
 :root {
-    --bz-bar: #E8E9EA;
+    --bz-bar-top: #ebeaeb;
     --bz-notification: #8edbfd;
     --bz-chat-sender: #d4f9bb;
     --bz-chat-addres: #fefffe;
     --bz-icon-bar: #b1b0b0;
     --bz-bell-back: #f2fafe;
+    --bz-search-back: #fbfbfa;
+}
+
+
+body {
+    background: linear-gradient(to top, #d2dadd, #dddbd1 85%, #009789 20%, #009789 75%);
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -22,26 +30,57 @@
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-
-
+    display: flex;
+    flex-direction: row;
 }
 
-body {
-    background: linear-gradient(to top, #d2dadd, #dddbd1 85%, #009789 20%, #009789 75%);
-    height: 100vh;
-    background-repeat: no-repeat;
+.left {
+    background-color: var(--bz-bar-top);
+    height: 80px;
+    flex-grow: 1;
 }
 
+.right {
+    flex-grow: 2;
+}
+
+.fa-solid {
+    color: var(--bz-icon-bar);
+    padding:10px;
+}
+
+/*REGION MAIN*/
+
+.me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid var(--bz-icon-bar);
+    
+}
+
+.avatar-me {
+    display: block;
+    width: 80px;
+    height: 80px;
+    padding:10px;
+    border-radius: 100%;
+    align-items: center;
+}
+
+.icon{
+    font-size:1.5rem;
+
+}
 
 
 
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 991px) {
-
-
-}
+@media screen and (max-width: 991px) {}
 
 @media screen and (max-width: 540px) {
-    
