@@ -122,7 +122,7 @@ body {
     margin: auto;
 }
 
-a{
+a {
     color: var(--bz-icon-bottom);
 }
 
@@ -164,11 +164,11 @@ a{
 
 .text-light {
     color: var(--bz-text-light);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .time {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -176,17 +176,55 @@ a{
 }
 
 /*END REGION CONTACTS--END REGION LEFT*/
-.info-chaton{
+.info-chaton {
     display: flex;
     flex-direction: row;
 }
+
 /*REGION CHAT-ON*/
 
 .chat {
     background-image: url(./img/mine.jpg);
     /*height: calc(100%-165px);*/
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
 }
+
+.sent {
+    align-self: flex-end;
+    background-color: var(--bz-chat-sender);
+}
+
+.recived {
+    align-self: flex-start;
+    background-color: var(--bz-chat-ligther);
+}
+
+.sent,
+.recived {
+    margin: 10px;
+    width: 60%;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.text-message{
+    padding:20px;
+}
+
+.info-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+   
+}
+
+ 
+
 /*REGION CHAT*/
 
 .typing {
