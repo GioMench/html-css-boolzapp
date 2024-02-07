@@ -15,6 +15,8 @@
     --bz-bell-back: #f2fafe;
     --bz-text-light: #c0c4d0;
     --bz-back-search: #fbfbfa;
+    --bz-bar-bottom: #f3eeea;
+    --bz-icon-bottom: #6a7276;
 }
 
 
@@ -176,22 +178,30 @@ body {
 /*REGION CHAT*/
 
 .typing {
-    background-color: var(--bz-bar-top);
+    background-color: var(--bz-bar-bottom);
     height: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .fa-face-smile,
 .fa-microphone {
     font-size: 2rem;
+    color: var(--bz-icon-bottom);
 }
 
-#write{
-
+#write {
+    background-color: var(--bz-chat-ligther);
+    width: 80%;
+    height: 60px;
+    padding-left: 10px;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
 }
 
 
@@ -233,7 +243,16 @@ body {
         width: 100%;
     }
 
-    .icon-right {
+    .icon-right,
+    .fa-face-smile,
+    .fa-microphone {
         display: none;
     }
+
+    #write{
+        width: 100%;
+        margin: auto;
+    }
+
+
 }
