@@ -253,17 +253,21 @@ ul {
     text-align: center;
 }
 
-div#hover li ul {
+.hover .menu-dropdown {
     display: none
 }
 
-div#hover li:hover ul {
+.hover .hover-dropdown:hover .menu-dropdown {
     display: block;
     position: absolute;
     right: 0;
     z-index: 1;
     padding: 0;
     
+}
+
+.menu-dropdown{
+    box-shadow: 0.5px 0.5px 10px 0.5px var(--bz-icon-bottom);
 }
 
 
