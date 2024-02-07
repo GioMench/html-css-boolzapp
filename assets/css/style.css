@@ -38,12 +38,12 @@ body {
     box-sizing: border-box;
 }
 
-#left {
+#contact_section {
     width: 35%;
     height: 100%;
 }
 
-#right {
+#chat_section {
     width: 70%;
     height: 100%;
 }
@@ -76,10 +76,6 @@ body {
     border-right: 1px solid var(--bz-icon-bar);
 
 }
-
-
-
-
 
 /*END REGION ME*/
 
@@ -198,6 +194,7 @@ a {
     height: calc(100% - 165px);
     display: flex;
     flex-direction: column;
+    gap:20px;
     padding: 40px;
 }
 
@@ -213,7 +210,6 @@ a {
 
 .sent,
 .recived {
-    margin: 10px;
     width: 55%;
     padding: 5px;
     border-radius: 15px;
@@ -228,8 +224,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
 
 /*REGION HOVER*/
@@ -270,11 +264,6 @@ ul {
     box-shadow: 0.5px 0.5px 10px 0.5px var(--bz-icon-bottom);
 }
 
-
-
-
-
-
 /*REGION CHAT*/
 
 .typing {
@@ -310,11 +299,11 @@ ul {
 
 @media screen and (max-width: 991px) {
 
-    #right {
+    #chat_section {
         width: 100%;
     }
 
-    #left {
+    #contact_section {
         width: 85px;
     }
 
@@ -339,11 +328,11 @@ ul {
 }
 
 @media screen and (max-width: 540px) {
-    #left {
+    #contact_section {
         display: none;
     }
 
-    #right {
+    #chat_section{
         width: 100%;
     }
 
