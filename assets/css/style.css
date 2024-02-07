@@ -25,6 +25,7 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     overflow: hidden;
+    font-family: 'Lato', sans-serif;
 }
 
 #app {
@@ -133,9 +134,10 @@ a {
 }
 
 
-.contacts{
+.contacts {
     display: flex;
     flex-direction: column;
+    height: calc(100% - 220px);
 }
 
 .card {
@@ -189,8 +191,7 @@ a {
 
 .chat {
     background-image: url(./img/mine.jpg);
-    /*height: calc(100%-165px);*/
-    height: 80%;
+    height: calc(100% - 165px);
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -209,14 +210,14 @@ a {
 .sent,
 .recived {
     margin: 10px;
-    width: 60%;
+    width: 55%;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
 }
 
 .text-message {
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
 }
 
 .info-message {
@@ -283,6 +284,10 @@ a {
     .info-contact,
     .time {
         display: none;
+    }
+
+    .contacts {
+        height: calc(100% - 80px)
     }
 
 
