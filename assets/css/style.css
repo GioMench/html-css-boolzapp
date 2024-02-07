@@ -35,19 +35,17 @@ body {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-
-    .left {
-        width: 35%;
-        height: 100%;
-    }
-
-    .right {
-        width: 70%;
-        height: 100%;
-    }
 }
 
+#left {
+    width: 35%;
+    height: 100%;
+}
 
+#right {
+    width: 70%;
+    height: 100%;
+}
 
 
 .fa-solid,
@@ -135,6 +133,11 @@ a {
 }
 
 
+.contacts{
+    display: flex;
+    flex-direction: column;
+}
+
 .card {
     background-color: var(--bz-chat-ligther);
     height: 85px;
@@ -155,7 +158,8 @@ a {
     align-items: center;
 }
 
-.info-contact {
+.info-contact,
+.info-contact-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,8 +215,8 @@ a {
     display: flex;
 }
 
-.text-message{
-    padding:20px;
+.text-message {
+    padding: 20px;
 }
 
 .info-message {
@@ -220,10 +224,10 @@ a {
     flex-direction: column;
     justify-content: space-between;
 
-   
+
 }
 
- 
+
 
 /*REGION CHAT*/
 
@@ -260,9 +264,12 @@ a {
 
 @media screen and (max-width: 991px) {
 
-    .left {
-        flex-grow: 0;
-        width: 80px;
+    #right {
+        width: 100%;
+    }
+
+    #left {
+        width: 85px;
     }
 
     .me,
@@ -278,14 +285,15 @@ a {
         display: none;
     }
 
+
 }
 
 @media screen and (max-width: 540px) {
-    .left {
+    #left {
         display: none;
     }
 
-    .right {
+    #right {
         width: 100%;
     }
 
